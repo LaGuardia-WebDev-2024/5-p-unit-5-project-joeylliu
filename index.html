@@ -1,14 +1,14 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] border:, margin:, and padding: 
-[  ] Three Images
+[ yes ] <div> and <span>
+[ yes ] border:, margin:, and padding: 
+[ yes ] Three Images
 
 Select TWO Additional Features to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
-[ no ] Feature 4 - Linear Gradient
+[ yes ] Feature 4 - Linear Gradient
 [ no ] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
 -->
@@ -22,11 +22,177 @@ Select TWO Additional Features to Add
   <meta charset="utf-8">
   <style>
 
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 800px;
+  height: 420px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:lightyellow;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:lightyellow;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.giving {
+  font-size: 24px;
+  font-weight: 900;
+  background-image: linear-gradient(#c7c3bf,#887b60, #272626);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: clip;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background-image: url("https://tse1.mm.bing.net/th/id/OIP.rIwX0pM99AYbZ5yXzJq5KwHaFP?pid=Api&P=0&h=180");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align:center;
+}
+
+.first {
+  background-color:rgb(248, 227, 234);
+  color:#746b6b;
+  font-style: italic;
+  font-size:x-large;
+}
+
+.lines {
+  color: lavender;
+}
+
+.boom {
+  margin: 20px;
+  border: 5px solid aliceblue;
+  padding: 5px;
+}
+
+.friends {
+  margin-bottom:100px;
+}
+
+#symbol {
+  color: rgb(119, 125, 131);
+  font-size: 20px;
+}
+
   </style>
 </head>
+
 <body>
+  <br> <br> <br> 
+  <h1 class="giving">Friendsgiving!</h1>
+    
+  <p id="symbol">----------------------------------------------------------- . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. ----------------------------------------------------------- </p>
+  <br> <br>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <br>
+<br><br><br><br><br>
+<br>
+<br> <br>
+    <p>open!!</p> 
+    </div>
+    <div class="flip-card-back">
+    <img src="http://clipart-library.com/img1/896854.jpg" alt="Avatar" style="width:800px;height:420px;">
+    </div>
+  </div>
+</div>
+<div id="info">
+  <br><br><br>
+    <p id="symbol">----------------------------------------------------------- . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. ----------------------------------------------------------- </p>
+    <br> <br>
+    <span class="first"> welcome to my friendsgiving!!
+    feel free to eat as much as you'd like! </span>
+  </p>
+</div>
+<br>
 
- 
+<img class="boom" src="https://www.ambitiouskitchen.com/wp-content/uploads/2023/02/Garlic-Bread-4.jpg" width="300">
+<p> garlic bread </p>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
 
+<img class="boom" src="https://www.tastingtable.com/img/gallery/whole-foods-is-marking-down-turkeys-for-amazon-prime-members/l-intro-1668452794.jpg" width="450">
+<p> turkey </p>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
+
+<img class="boom" src="https://therecipecritic.com/wp-content/uploads/2019/02/deviled_eggs_therecipecritic.com_.jpg" width="300">
+ <p>deviled eggs</p>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
+
+<img class="boom" src="https://www.momontimeout.com/wp-content/uploads/2019/11/homemade-mashed-potatoes-1200.jpg" width="300">
+<P> mashed potatos</P>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
+
+<img class="boom" src="https://somuchfoodblog.com/wp-content/uploads/2022/10/baked-mac-n-cheese13.jpg" width="270">
+<P>baked mac and cheese</P>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
+
+<img class="boom" src="https://dishingouthealth.com/wp-content/uploads/2022/09/CreamyTomatoPasta_Styled1.jpg" width="300">
+<P>creamy potato pasta</P>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
+
+<img class="boom" src="https://fitandhealthier.org/wp-content/uploads/2025/05/Marbled_Brownie_Chocolate_Chip_Cookie_-1-819x1024.webp" width="300">
+<P>marbled brownie chocolate chip cookies</P>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
+
+<img class="boom" src="https://momsdinner.net/wp-content/uploads/2022/10/Shirley-Temple-Drink-683x1024.jpg" width="300">
+<P>shirley temples</P>
+<br>
+<p class="lines">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</p>
+<br>
+
+<p id="symbol"> °❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･</p>
+<br>
 </body>
 </html>
